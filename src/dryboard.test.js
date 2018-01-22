@@ -1,5 +1,4 @@
-require("babel-polyfill");
-const dryboard = require("../lib/dryboard");
+const dryboard = require("./dryboard");
 
 describe("Tests for the async cache engine", () => {
   it("should have a configuration funcion", () => {
