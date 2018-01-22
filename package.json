@@ -1,0 +1,37 @@
+{
+  "name": "dryboard",
+  "version": "0.1.0",
+  "description": "Dryboard is an async, future-enabled memory key store.",
+  "main": "dryboard.js",
+  "scripts": {
+    "compile": "./node_modules/.bin/babel -d lib/ src/",
+    "test": "jest",
+    "prepublish": "npm run compile"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/jasonsantos/dryboard.git"
+  },
+  "keywords": ["async", "cache"],
+  "author": "Jason Santos <jasonsantos@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jasonsantos/dryboard/issues"
+  },
+  "homepage": "https://github.com/jasonsantos/dryboard#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1"
+  },
+  "babel": {
+    "presets": ["env"],
+    "plugins": ["transform-object-rest-spread"]
+  },
+  "jest": {
+    "coverageDirectory": "./coverage/",
+    "collectCoverage": true
+  },
+  "dependencies": {}
+}
