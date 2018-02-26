@@ -25,9 +25,9 @@ const dryboard = require("dryboard").configureDryboard();
 
 dryboard.set("pi", "3.14159265");
 
-const pi = dryboard.get("pi");
+const pi = await dryboard.get("pi"); //Without await, this returns a Promise so
 
-console.log(pi); // 3.14159265
+console.log(pi); // 3.14159265 this would be a Promise if you don't use await
 ```
 
 ### Less Trivial
