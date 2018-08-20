@@ -13,7 +13,10 @@
     "type": "git",
     "url": "git+ssh://git@github.com/jasonsantos/dryboard.git"
   },
-  "keywords": ["async", "cache"],
+  "keywords": [
+    "async",
+    "cache"
+  ],
   "author": "Jason Santos <jasonsantos@gmail.com>",
   "license": "MIT",
   "bugs": {
@@ -21,20 +24,32 @@
   },
   "homepage": "https://github.com/jasonsantos/dryboard#readme",
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-plugin-transform-object-rest-spread": "^6.26.0",
-    "babel-preset-env": "^1.6.1",
-    "codecov": "^3.0.0",
-    "jest": "^22.1.4"
+    "babel-cli": "",
+    "babel-plugin-transform-object-rest-spread": "",
+    "babel-preset-env": "",
+    "codecov": "",
+    "jest": ""
   },
   "babel": {
-    "presets": ["env"],
-    "plugins": ["transform-object-rest-spread"],
-    "ignore": ["*.test.js"]
+    "presets": [
+      "env"
+    ],
+    "plugins": [
+      "transform-object-rest-spread"
+    ],
+    "ignore": [
+      "*.test.js"
+    ]
   },
   "jest": {
     "coverageDirectory": "./coverage/",
     "collectCoverage": true
   },
-  "dependencies": {}
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "codecov": "^3.0.4",
+    "jest": "^23.5.0"
+  }
 }
